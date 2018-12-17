@@ -219,30 +219,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var ngx_spinner__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ngx-spinner */ "./node_modules/ngx-spinner/fesm5/ngx-spinner.js");
 /* harmony import */ var _agm_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @agm/core */ "./node_modules/@agm/core/index.js");
-/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/cdk/overlay */ "./node_modules/@angular/cdk/esm5/overlay.es5.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
-/* harmony import */ var _theme_utils_custom_overlay_container__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./theme/utils/custom-overlay-container */ "./src/app/theme/utils/custom-overlay-container.ts");
-/* harmony import */ var _theme_utils_scroll_strategy__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./theme/utils/scroll-strategy */ "./src/app/theme/utils/scroll-strategy.ts");
-/* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./shared/shared.module */ "./src/app/shared/shared.module.ts");
-/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _pages_pages_component__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./pages/pages.component */ "./src/app/pages/pages.component.ts");
-/* harmony import */ var _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./pages/not-found/not-found.component */ "./src/app/pages/not-found/not-found.component.ts");
-/* harmony import */ var _theme_components_top_menu_top_menu_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./theme/components/top-menu/top-menu.component */ "./src/app/theme/components/top-menu/top-menu.component.ts");
-/* harmony import */ var _theme_components_menu_menu_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./theme/components/menu/menu.component */ "./src/app/theme/components/menu/menu.component.ts");
-/* harmony import */ var _theme_components_sidenav_menu_sidenav_menu_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./theme/components/sidenav-menu/sidenav-menu.component */ "./src/app/theme/components/sidenav-menu/sidenav-menu.component.ts");
-/* harmony import */ var _theme_components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./theme/components/breadcrumb/breadcrumb.component */ "./src/app/theme/components/breadcrumb/breadcrumb.component.ts");
-/* harmony import */ var _app_settings__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./app.settings */ "./src/app/app.settings.ts");
-/* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./app.service */ "./src/app/app.service.ts");
-/* harmony import */ var _theme_utils_app_interceptor__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./theme/utils/app-interceptor */ "./src/app/theme/utils/app-interceptor.ts");
-/* harmony import */ var _theme_components_options_options_component__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./theme/components/options/options.component */ "./src/app/theme/components/options/options.component.ts");
-/* harmony import */ var _theme_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./theme/components/footer/footer.component */ "./src/app/theme/components/footer/footer.component.ts");
+/* harmony import */ var angularfire2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! angularfire2 */ "./node_modules/angularfire2/index.js");
+/* harmony import */ var angularfire2__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(angularfire2__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var angularfire2_database__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! angularfire2/database */ "./node_modules/angularfire2/database/index.js");
+/* harmony import */ var angularfire2_database__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(angularfire2_database__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _environments_environment__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../environments/environment */ "./src/environments/environment.ts");
+/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/cdk/overlay */ "./node_modules/@angular/cdk/esm5/overlay.es5.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var _theme_utils_custom_overlay_container__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./theme/utils/custom-overlay-container */ "./src/app/theme/utils/custom-overlay-container.ts");
+/* harmony import */ var _theme_utils_scroll_strategy__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./theme/utils/scroll-strategy */ "./src/app/theme/utils/scroll-strategy.ts");
+/* harmony import */ var _shared_shared_module__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./shared/shared.module */ "./src/app/shared/shared.module.ts");
+/* harmony import */ var _app_routing__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./app.routing */ "./src/app/app.routing.ts");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _pages_pages_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./pages/pages.component */ "./src/app/pages/pages.component.ts");
+/* harmony import */ var _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./pages/not-found/not-found.component */ "./src/app/pages/not-found/not-found.component.ts");
+/* harmony import */ var _theme_components_top_menu_top_menu_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./theme/components/top-menu/top-menu.component */ "./src/app/theme/components/top-menu/top-menu.component.ts");
+/* harmony import */ var _theme_components_menu_menu_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./theme/components/menu/menu.component */ "./src/app/theme/components/menu/menu.component.ts");
+/* harmony import */ var _theme_components_sidenav_menu_sidenav_menu_component__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./theme/components/sidenav-menu/sidenav-menu.component */ "./src/app/theme/components/sidenav-menu/sidenav-menu.component.ts");
+/* harmony import */ var _theme_components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./theme/components/breadcrumb/breadcrumb.component */ "./src/app/theme/components/breadcrumb/breadcrumb.component.ts");
+/* harmony import */ var _app_settings__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./app.settings */ "./src/app/app.settings.ts");
+/* harmony import */ var _app_service__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./app.service */ "./src/app/app.service.ts");
+/* harmony import */ var _theme_utils_app_interceptor__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./theme/utils/app-interceptor */ "./src/app/theme/utils/app-interceptor.ts");
+/* harmony import */ var _theme_components_options_options_component__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./theme/components/options/options.component */ "./src/app/theme/components/options/options.component.ts");
+/* harmony import */ var _theme_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./theme/components/footer/footer.component */ "./src/app/theme/components/footer/footer.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
 
 
 
@@ -274,34 +282,36 @@ var AppModule = /** @class */ (function () {
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"])({
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                angularfire2__WEBPACK_IMPORTED_MODULE_6__["AngularFireModule"].initializeApp(_environments_environment__WEBPACK_IMPORTED_MODULE_8__["environment"].firebaseConfig),
+                angularfire2_database__WEBPACK_IMPORTED_MODULE_7__["AngularFireDatabaseModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_2__["BrowserAnimationsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HttpClientModule"],
                 ngx_spinner__WEBPACK_IMPORTED_MODULE_4__["NgxSpinnerModule"],
                 _agm_core__WEBPACK_IMPORTED_MODULE_5__["AgmCoreModule"].forRoot({
                     apiKey: 'AIzaSyBNcjxo_35qnEG17dQvvftWa68eZWepYE0'
                 }),
-                _shared_shared_module__WEBPACK_IMPORTED_MODULE_10__["SharedModule"],
-                _app_routing__WEBPACK_IMPORTED_MODULE_11__["routing"]
+                _shared_shared_module__WEBPACK_IMPORTED_MODULE_13__["SharedModule"],
+                _app_routing__WEBPACK_IMPORTED_MODULE_14__["routing"]
             ],
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"],
-                _pages_pages_component__WEBPACK_IMPORTED_MODULE_13__["PagesComponent"],
-                _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_14__["NotFoundComponent"],
-                _theme_components_top_menu_top_menu_component__WEBPACK_IMPORTED_MODULE_15__["TopMenuComponent"],
-                _theme_components_menu_menu_component__WEBPACK_IMPORTED_MODULE_16__["MenuComponent"],
-                _theme_components_sidenav_menu_sidenav_menu_component__WEBPACK_IMPORTED_MODULE_17__["SidenavMenuComponent"],
-                _theme_components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_18__["BreadcrumbComponent"],
-                _theme_components_options_options_component__WEBPACK_IMPORTED_MODULE_22__["OptionsComponent"],
-                _theme_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_23__["FooterComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"],
+                _pages_pages_component__WEBPACK_IMPORTED_MODULE_16__["PagesComponent"],
+                _pages_not_found_not_found_component__WEBPACK_IMPORTED_MODULE_17__["NotFoundComponent"],
+                _theme_components_top_menu_top_menu_component__WEBPACK_IMPORTED_MODULE_18__["TopMenuComponent"],
+                _theme_components_menu_menu_component__WEBPACK_IMPORTED_MODULE_19__["MenuComponent"],
+                _theme_components_sidenav_menu_sidenav_menu_component__WEBPACK_IMPORTED_MODULE_20__["SidenavMenuComponent"],
+                _theme_components_breadcrumb_breadcrumb_component__WEBPACK_IMPORTED_MODULE_21__["BreadcrumbComponent"],
+                _theme_components_options_options_component__WEBPACK_IMPORTED_MODULE_25__["OptionsComponent"],
+                _theme_components_footer_footer_component__WEBPACK_IMPORTED_MODULE_26__["FooterComponent"]
             ],
             providers: [
-                _app_settings__WEBPACK_IMPORTED_MODULE_19__["AppSettings"],
-                _app_service__WEBPACK_IMPORTED_MODULE_20__["AppService"],
-                { provide: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_6__["OverlayContainer"], useClass: _theme_utils_custom_overlay_container__WEBPACK_IMPORTED_MODULE_8__["CustomOverlayContainer"] },
-                { provide: _angular_material__WEBPACK_IMPORTED_MODULE_7__["MAT_MENU_SCROLL_STRATEGY"], useFactory: _theme_utils_scroll_strategy__WEBPACK_IMPORTED_MODULE_9__["menuScrollStrategy"], deps: [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_6__["Overlay"]] },
-                { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"], useClass: _theme_utils_app_interceptor__WEBPACK_IMPORTED_MODULE_21__["AppInterceptor"], multi: true }
+                _app_settings__WEBPACK_IMPORTED_MODULE_22__["AppSettings"],
+                _app_service__WEBPACK_IMPORTED_MODULE_23__["AppService"],
+                { provide: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_9__["OverlayContainer"], useClass: _theme_utils_custom_overlay_container__WEBPACK_IMPORTED_MODULE_11__["CustomOverlayContainer"] },
+                { provide: _angular_material__WEBPACK_IMPORTED_MODULE_10__["MAT_MENU_SCROLL_STRATEGY"], useFactory: _theme_utils_scroll_strategy__WEBPACK_IMPORTED_MODULE_12__["menuScrollStrategy"], deps: [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_9__["Overlay"]] },
+                { provide: _angular_common_http__WEBPACK_IMPORTED_MODULE_3__["HTTP_INTERCEPTORS"], useClass: _theme_utils_app_interceptor__WEBPACK_IMPORTED_MODULE_24__["AppInterceptor"], multi: true }
             ],
-            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_12__["AppComponent"]]
+            bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_15__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
@@ -365,8 +375,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Data", function() { return Data; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppService", function() { return AppService; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
-/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
+/* harmony import */ var angularfire2_database__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! angularfire2/database */ "./node_modules/angularfire2/database/index.js");
+/* harmony import */ var angularfire2_database__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(angularfire2_database__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
+/* harmony import */ var _angular_material__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/material */ "./node_modules/@angular/material/esm5/material.es5.js");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -376,6 +388,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 var __metadata = (undefined && undefined.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
+
 
 
 
@@ -392,9 +405,10 @@ var Data = /** @class */ (function () {
 }());
 
 var AppService = /** @class */ (function () {
-    function AppService(http, snackBar) {
+    function AppService(http, snackBar, db) {
         this.http = http;
         this.snackBar = snackBar;
+        this.db = db;
         this.Data = new Data([], // categories
         [], // compareList
         [], // wishList
@@ -406,6 +420,10 @@ var AppService = /** @class */ (function () {
     }
     AppService.prototype.getCategories = function () {
         return this.http.get(this.url + 'categories.json');
+    };
+    AppService.prototype.getProductsFirebase = function (type) {
+        this.itemList = this.db.list('items');
+        return this.itemList.snapshotChanges();
     };
     AppService.prototype.getProducts = function (type) {
         return this.http.get(this.url + type + '-products.json');
@@ -786,7 +804,7 @@ var AppService = /** @class */ (function () {
     };
     AppService = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"])(),
-        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"], _angular_material__WEBPACK_IMPORTED_MODULE_2__["MatSnackBar"]])
+        __metadata("design:paramtypes", [_angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClient"], _angular_material__WEBPACK_IMPORTED_MODULE_3__["MatSnackBar"], angularfire2_database__WEBPACK_IMPORTED_MODULE_1__["AngularFireDatabase"]])
     ], AppService);
     return AppService;
 }());
@@ -3104,7 +3122,15 @@ __webpack_require__.r(__webpack_exports__);
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
 var environment = {
-    production: false
+    production: false,
+    firebaseConfig: {
+        apiKey: "AIzaSyCftqU5WVa8g32jUkMz4NiDZwCv5GaiuB4",
+        authDomain: "netsuite-item-browser.firebaseapp.com",
+        databaseURL: "https://netsuite-item-browser.firebaseio.com",
+        projectId: "netsuite-item-browser",
+        storageBucket: "netsuite-item-browser.appspot.com",
+        messagingSenderId: "912841990222"
+    }
 };
 /*
  * For easier debugging in development mode, you can import the following file

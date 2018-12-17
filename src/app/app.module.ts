@@ -5,6 +5,11 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { AgmCoreModule } from '@agm/core';
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { environment } from '../environments/environment';
+
 import { OverlayContainer, Overlay } from '@angular/cdk/overlay';
 import { MAT_MENU_SCROLL_STRATEGY } from '@angular/material';
 import { CustomOverlayContainer } from './theme/utils/custom-overlay-container';
@@ -30,6 +35,8 @@ import { FooterComponent } from './theme/components/footer/footer.component';
 @NgModule({
    imports: [
     BrowserModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireDatabaseModule,
     BrowserAnimationsModule,
     HttpClientModule,
     NgxSpinnerModule,

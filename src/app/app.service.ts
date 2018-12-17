@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { AngularFireDatabase, AngularFireList } from 'angularfire2/database';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { MatSnackBar } from '@angular/material';
@@ -24,12 +25,19 @@ export class AppService {
         0 //totalCartCount
     )
     public url = "assets/data/";
-    constructor(public http:HttpClient, public snackBar: MatSnackBar) { }
+
+    constructor(public http:HttpClient, public snackBar: MatSnackBar, public db: AngularFireDatabase) { }
+    itemList: AngularFireList<any>;
     
     public getCategories(): Observable<Category[]>{
         return this.http.get<Category[]>(this.url + 'categories.json');
     }
    
+    public getProductsFirebase(type) {
+        this.itemList = this.db.list(type);
+        return this.itemList.snapshotChanges();        
+    }
+
     public getProducts(type): Observable<Product[]>{        
         return this.http.get<Product[]>(this.url + type + '-products.json');
     }

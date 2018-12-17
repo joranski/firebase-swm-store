@@ -20,7 +20,7 @@ export class ProductsComponent implements OnInit {
   public count:any;
   public sortings = ['Sort by Default', 'Best match', 'Lowest first', 'Highest first'];
   public sort:any;
-  public products: Array<Product> = [];
+  public products = [];
   public categories:Category[];
   public brands = [];
   public priceFrom: number = 750;
@@ -50,13 +50,16 @@ export class ProductsComponent implements OnInit {
   }
 
   public getAllProducts(){
-    this.appService.getProducts("featured").subscribe(data=>{
-      this.products = data; 
-      //for show more product  
-      for (var index = 0; index < 3; index++) {
-        this.products = this.products.concat(this.products);        
-      }
-    });
+    this.appService.getProductsFirebase("item").subscribe(
+      list => {
+        this.products = list.map(item => {
+          return {
+            $key: item.key,
+            ...item.payload.val()
+          };
+        });
+      }      
+    );
   }
 
   public getCategories(){  
