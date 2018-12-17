@@ -50,7 +50,7 @@ export class ProductsComponent implements OnInit {
   }
 
   public getAllProducts(){
-    this.appService.getProductsFirebase("item").subscribe(
+    this.appService.getProductsFirebase("NonInvtPart").subscribe(
       list => {
         this.products = list.map(item => {
           return {
