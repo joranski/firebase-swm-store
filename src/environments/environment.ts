@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  firebaseConfig : {
+  firebaseConfig: {
     apiKey: "AIzaSyCeRCKkHJVueh-CJbW01y9ZOClWdZhWhb8",
     authDomain: "netsuite-ecommerce.firebaseapp.com",
     databaseURL: "https://netsuite-ecommerce.firebaseio.com",
@@ -22,3 +22,4 @@ export const environment = {
  * on performance if an error is thrown.
  */
 // import 'zone.js/dist/zone-error';  // Included with Angular CLI.
+

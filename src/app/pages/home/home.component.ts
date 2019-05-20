@@ -10,11 +10,11 @@ import { Product } from "../../app.models";
 export class HomeComponent implements OnInit {
 
   public slides = [
-    { title: 'The biggest sale', subtitle: 'Special for today', image: 'assets/images/carousel/banner1.jpg' },
-    { title: 'Summer collection', subtitle: 'New Arrivals On Sale', image: 'assets/images/carousel/banner2.jpg' },
-    { title: 'The biggest sale', subtitle: 'Special for today', image: 'assets/images/carousel/banner3.jpg' },
-    { title: 'Summer collection', subtitle: 'New Arrivals On Sale', image: 'assets/images/carousel/banner4.jpg' },
-    { title: 'The biggest sale', subtitle: 'Special for today', image: 'assets/images/carousel/banner5.jpg' }
+    { title: 'The biggest sale', subtitle: 'Special for today', image: 'https://cdn.southwestmedical.com/image-bg/wheel-builder-bk.png?w=700&h=240&fit=crop' },
+    { title: 'Summer collection', subtitle: 'New Arrivals On Sale', image: 'https://cdn.southwestmedical.com/image-bg/qw-water.jpg?w=700&h=240&fit=crop' },
+    { title: 'The biggest sale', subtitle: 'Special for today', image: 'https://cdn.southwestmedical.com/image-bg/Quickie-Wheelchair-Parts.png?w=700&h=240&fit=crop' },
+    { title: 'Summer collection', subtitle: 'New Arrivals On Sale', image: 'https://cdn.southwestmedical.com/image-bg/qw-wheels.png?w=700&h=240&fit=crop' },
+    { title: 'The biggest sale', subtitle: 'Special for today', image: 'https://cdn.southwestmedical.com/image-bg/qw-offroad.jpg?w=700&h=240&fit=crop' }
   ];
 
   public brands = [];

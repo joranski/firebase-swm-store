@@ -9,6 +9,7 @@ import { Settings, AppSettings } from './app.settings';
 })
 export class AppComponent {
   loading: boolean = false;
+
   public settings: Settings;
   constructor(public appSettings:AppSettings, public router: Router){
     this.settings = this.appSettings.settings;
