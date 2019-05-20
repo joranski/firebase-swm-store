@@ -28,7 +28,7 @@ import { BreadcrumbComponent } from './theme/components/breadcrumb/breadcrumb.co
 import { AppSettings } from './app.settings';
 import { AppService } from './app.service';
 import { AppInterceptor } from './theme/utils/app-interceptor';
-import { OptionsComponent } from './theme/components/options/options.component';
+import { ChatComponent } from './theme/components/chat/chat.component';
 import { FooterComponent } from './theme/components/footer/footer.component';
 import { PhonePipe } from './phone.pipe';
 
@@ -55,7 +55,7 @@ import { PhonePipe } from './phone.pipe';
     MenuComponent,
     SidenavMenuComponent,
     BreadcrumbComponent,
-    OptionsComponent,
+    ChatComponent,
     FooterComponent,
     PhonePipe    
   ], 
