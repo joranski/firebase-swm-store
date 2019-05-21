@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "emporium": {
+    "swm": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -80,18 +80,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "emporium:build"
+            "browserTarget": "swm:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "emporium:build:production"
+              "browserTarget": "swm:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "emporium:build"
+            "browserTarget": "swm:build"
           }
         },
         "test": {
@@ -125,7 +125,7 @@
         }
       }
     },
-    "emporium-e2e": {
+    "swm-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -134,11 +134,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "emporium:serve"
+            "devServerTarget": "swm:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "emporium:serve:production"
+              "devServerTarget": "swm:serve:production"
             }
           }
         },
@@ -154,5 +154,5 @@
       }
     }
   },
-  "defaultProject": "emporium"
+  "defaultProject": "swm"
 }

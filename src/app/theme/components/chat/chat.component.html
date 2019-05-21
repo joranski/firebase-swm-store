@@ -10,8 +10,13 @@
             <fieldset><legend>Customer Service</legend>I see you are on Quickie 2 product page.  Is this the product you need help with?</fieldset>
             <fieldset class="customer"><legend>John Doe</legend>yes</fieldset>
             <fieldset><legend>Customer Service</legend>You can walk through the steps.  Please click on the bottom to allow me to see the contents of the page as you configure your new Quickie 2.</fieldset>
+            <fieldset><legend>Customer Service</legend>Are you still there.  Can I help you any more with your product configuration?</fieldset>
+            <fieldset><legend>Customer Service</legend>I see you might have left the chat.  Please start chatting again to reactivate chat log or contact us at our 1-800-236-4215 and we will be glad to assist.</fieldset>
         </div>
-        <textarea name="chatlog" id="chatlog" placeholder="Start chat here."></textarea>
+        <mat-form-field class="input-full-width">
+            <textarea matInput name="chatlog" id="chatlog" placeholder="Type a message"></textarea>
+            <mat-hint>Chat with our customer support!</mat-hint>
+        </mat-form-field>
         <button mat-stroked-button style="float: right;">Send</button>
     </mat-card>
 </div>

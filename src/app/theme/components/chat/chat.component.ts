@@ -11,6 +11,10 @@ export class ChatComponent {
   public settings: Settings;
   constructor(public appSettings:AppSettings) { 
     this.settings = this.appSettings.settings; 
+    let innerWidth = window.innerWidth;
+    let innerHeight = window.innerHeight;
+    console.log('Width: ' + innerWidth);
+    console.log('Height: ' + innerHeight);
   }
 
   public changeTheme(theme){
