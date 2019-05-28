@@ -4,14 +4,6 @@
 
 export const environment = {
   production: false,
-  firebaseConfig: {
-    apiKey: "AIzaSyCeRCKkHJVueh-CJbW01y9ZOClWdZhWhb8",
-    authDomain: "netsuite-ecommerce.firebaseapp.com",
-    databaseURL: "https://netsuite-ecommerce.firebaseio.com",
-    projectId: "netsuite-ecommerce",
-    storageBucket: "netsuite-ecommerce.appspot.com",
-    messagingSenderId: "862517724070"
-  }
 };
 
 /*

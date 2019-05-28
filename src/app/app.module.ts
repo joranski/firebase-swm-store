@@ -5,8 +5,13 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { AgmCoreModule } from '@agm/core';
 
-import { AngularFireModule } from 'angularfire2';
-import { AngularFireDatabaseModule } from 'angularfire2/database';
+//import { AngularFireModule } from 'angularfire2';
+//import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { AngularFireModule } from '@angular/fire';
+//import { AngularFirestoreModule, FirestoreSettingsToken } from '@angular/fire/firestore';
+import { AngularFireDatabaseModule } from '@angular/fire/database';
+import { AngularFireAuthModule } from '@angular/fire/auth';
+import { AngularFireStorageModule } from '@angular/fire/storage';
 
 import { environment } from '../environments/environment';
 
@@ -32,11 +37,20 @@ import { ChatComponent } from './theme/components/chat/chat.component';
 import { FooterComponent } from './theme/components/footer/footer.component';
 import { PhonePipe } from './phone.pipe';
 
+export const firebaseConfig = {
+  apiKey: "AIzaSyDxjWikpHcMmgXcFSFAAWUJ7v_G6cn2Om0",
+  authDomain: "swm-web.firebaseapp.com",
+  databaseURL: "https://swm-web.firebaseio.com",
+  projectId: "swm-web",
+  storageBucket: "swm-web.appspot.com",
+  messagingSenderId: "1050120250751",
+  appId: "1:1050120250751:web:04a569ffd7a1dc78"
+};
 
 @NgModule({
    imports: [
     BrowserModule,
-    AngularFireModule.initializeApp(environment.firebaseConfig),
+    AngularFireModule.initializeApp(firebaseConfig),
     AngularFireDatabaseModule,
     BrowserAnimationsModule,
     HttpClientModule,
