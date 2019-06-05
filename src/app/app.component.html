@@ -1,5 +1,25 @@
-<div id="app" class="h-100 app" [ngClass]="settings.theme"> 
+<div id="app" class="h-100 app" [ngClass]="settings.theme">
+    <mat-list>
+        <ng-container *ngFor="let cat of nav | async">
+            <h1 mat-line>{{ cat.name }}: {{cat.category_id}}</h1>
+            <b mat-line>{{ cat.description }}</b>
+            <blockquote *ngFor="let subcat of cat['category-categories']" style="margin:0 0 20px 20px;">
+                <h4>{{ subcat.name }} | {{subcat.category_id}}</h4>
+                <blockquote *ngFor="let ssubcat of subcat['category-categories']" style="margin:0 0 10px 20px;">
+                    <h5>{{ ssubcat.name }} | {{ssubcat.category_id}}</h5>
+                    <blockquote *ngFor="let sssubcat of ssubcat['category-categories']" style="margin:0 0 5px 20px;">
+                        <h6>{{ sssubcat.name }} | {{sssubcat.category_id}}</h6>
+                    </blockquote>
+
+                </blockquote>
+            </blockquote>
+            <mat-divider></mat-divider>
+        </ng-container>
+    </mat-list>
+
+
+
     <router-outlet></router-outlet>
     <!--<ngx-spinner [bdOpacity]= "0.7" [bdColor] = "'#333'" [size] = "'large'" [color] = "'#fff'" [type] = "'ball-clip-rotate'"></ngx-spinner>     -->
-    <ngx-spinner bdColor="rgba(51,51,51,0.7)" size="large" color= "#fff" type="ball-clip-rotate"></ngx-spinner>     
+    <ngx-spinner bdColor="rgba(51,51,51,0.7)" size="large" color="#fff" type="ball-clip-rotate"></ngx-spinner>
 </div>

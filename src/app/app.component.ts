@@ -1,10 +1,12 @@
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Settings, AppSettings } from './app.settings';
-import { SwmService } from './swm.service';
-import { tap, map } from 'rxjs/operators';
 
-import { variable } from '@angular/compiler/src/output/output_ast';
+/////////import { SwmService } from './swm.service';
+/////////import { AngularFireList } from '@angular/fire/database';
+/////////import { Observable } from 'rxjs';
+/////////import { map } from 'rxjs/operators/map';
+
 
 @Component({
   selector: 'app-root',
@@ -13,25 +15,20 @@ import { variable } from '@angular/compiler/src/output/output_ast';
 })
 export class AppComponent {
   loading: boolean = false;
-  nav: any;
+  /////////public nav: Observable<any[]>;
+  /////////public navRef: AngularFireList<any>;
 
   public settings: Settings;
-  constructor(public appSettings: AppSettings, private swmService: SwmService, public router: Router) {
+  constructor(public appSettings: AppSettings, public router: Router) {
     this.settings = this.appSettings.settings;
   }
 
   ngOnInit() {
     // this.router.navigate(['']);  //redirect other pages to homepage on browser refresh  
-    this.nav = this.swmService.getNav().snapshotChanges().pipe(
-    ).subscribe(data => {
-      console.log(data);
-      data.map(test => { console.log("Map: ", test.payload.key, test.payload.toJSON()); })
-      
-    });
-
-
-
-
+    /////////this.navRef = this.swmService.getNav();
+    /////////this.nav = this.navRef.snapshotChanges().pipe(
+    /////////  map(changes => changes.map(c => ({ key: c.payload.key, ...c.payload.val() })))
+    /////////);
   }
 
   ngAfterViewInit() {

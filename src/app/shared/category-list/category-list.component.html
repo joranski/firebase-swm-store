@@ -2,7 +2,8 @@
     <button mat-menu-item (click)="changeCategory($event)">
         <span>{{category.name}}</span>
     </button>
-     <div *ngIf="category.hasSubCategory" class="sub-category">
-        <app-category-list [categories]="categories" [categoryParentId]="category.id" (change)="changeCategory($event)"></app-category-list>
+    <div *ngIf="category['category-categories']" class="sub-category">
+        <app-category-list [categories]="category['category-categories']" [categoryParentId]="category.category_id"
+            (change)="changeCategory($event)"></app-category-list>
     </div>
 </div>

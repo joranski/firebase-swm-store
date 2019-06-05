@@ -6,6 +6,13 @@ import { AppService } from '../app.service';
 import { Category, Product } from '../app.models';
 import { SidenavMenuService } from '../theme/components/sidenav-menu/sidenav-menu.service';
 
+// main includes
+import { SwmService } from './../swm.service';
+import { AngularFireList } from '@angular/fire/database';
+import { Observable } from 'rxjs';
+import { map } from 'rxjs/operators/map';
+
+
 @Component({
   selector: 'app-pages',
   templateUrl: './pages.component.html',
@@ -13,6 +20,8 @@ import { SidenavMenuService } from '../theme/components/sidenav-menu/sidenav-men
   providers: [ SidenavMenuService ]
 })
 export class PagesComponent implements OnInit {
+  public nav: Observable<Category[]>;
+  public navRef: AngularFireList<any>;
   public showBackToTop:boolean = false;
   public categories:Category[];
   public category:Category;
@@ -23,6 +32,7 @@ export class PagesComponent implements OnInit {
   constructor(public appSettings:AppSettings, 
               public appService:AppService, 
               public sidenavMenuService:SidenavMenuService,
+              private swmService: SwmService,
               public router:Router) { 
     this.settings = this.appSettings.settings; 
   }
@@ -33,11 +43,26 @@ export class PagesComponent implements OnInit {
   } 
 
   public getCategories(){    
-    this.appService.getCategories().subscribe(data => {
+    this.navRef = this.swmService.getNav();
+    this.nav = this.navRef.snapshotChanges().pipe(
+      map(changes => changes.map(c => ({ key: c.payload.key, ...c.payload.val() })))
+    );
+    this.nav.subscribe(data => {
+      console.log('hihi',data);
       this.categories = data;
       this.category = data[0];
+      console.log('pages', this.category);
       this.appService.Data.categories = data;
+    });
+    /*
+    this.appService.getCategories().subscribe(data => {
+      console.log(data['data']);
+      this.categories = data['data'];
+      this.category = data['data'][0];
+      console.log(this.category);
+      this.appService.Data.categories = data['data'];
     })
+    */
   }
 
   public changeCategory(event){

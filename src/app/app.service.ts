@@ -40,7 +40,9 @@ export class AppService {
     itemList: AngularFireList<any>;
 
     public getCategories(): Observable<Category[]> {
-        return this.http.get<Category[]>(this.url + 'categories.json');
+        //return this.http.get<Category[]>(this.url + 'categories.json');
+        return this.http.get<Category[]>('https://www.southwestmedical.com/api/nav');
+
     }
 
     public getProductsFirebase(type) {
